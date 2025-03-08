@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="image/marca.png" alt="Logo da Marca" style="width: 100px; height: 50px; background-color: #ff69b4;">
+            </div>
+            <div class="account-center">
+                <button class="account-button">
+                    <img src="/image/account-icon.png" alt="Central de Contas" style="width: 40px; height: 40px;">
+                </button>
+                <div class="account-dropdown">
+                    <a href="/html/login.html">Login</a>
+                    <a href="/html/register.html">Cadastro</a>
+                </div>
+            </div>
+        </div>
+        <div class="top-bar">
+            <input type="text" placeholder="Buscar">
+            <div class="cart">
+                <button class="cart-button">
+                    <img src="image/compras.jpg" alt="Carrinho" style="width: 60px; height: 60px;">
+                </button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Fios</a></li>
+                <li><a href="#">Maquiagem</a></li>
+                <li><a href="#">Perfumaria</a></li>
+                <li><a href="#">Banho e Corpo</a></li>
+                <li><a href="#">Skincare</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main-content">
+            <div class="left-arrow" onclick="previousContent()">←</div>
+            <div class="content-box" id="content-box">Conteúdo 1</div>
+            <div class="right-arrow" onclick="nextContent()">→</div>
+        </section>
+        <div class="image-count-bar">
+            <span class="dot" id="dot-0"></span>
+            <span class="dot" id="dot-1"></span>
+            <span class="dot" id="dot-2"></span>
+        </div>
+        <section class="icons">
+            <div class="icon">
+                <img src="launch-icon.png" alt="Lançamentos">
+                <span>Lançamentos</span>
+            </div>
+            <div class="icon">
+                <img src="gift-icon.png" alt="Presentes">
+                <span>Presentes</span>
+            </div>
+            <div class="icon">
+                <img src="coupon-icon.png" alt="Cupons">
+                <span>Cupons</span>
+            </div>
+            <div class="icon">
+                <img src="brand-icon.png" alt="Marcas">
+                <span>Marcas</span>
+            </div>
+        </section>
+        <section class="about">
+            <h2>Sobre a marca</h2>
+            <p>Informações sobre a marca...</p>
+        </section>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>
